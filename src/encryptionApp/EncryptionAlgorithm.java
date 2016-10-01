@@ -18,10 +18,10 @@ public class EncryptionAlgorithm {
 	public EncryptionAlgorithm(String message, String key) {
 		this.message = message.toLowerCase();
 		this.key = key.toLowerCase();
-		map = new Hashtable<String, Integer>(42);
+		map = new Hashtable<String, Integer>(41);
 		keyNum = 0;
 		
-		String a = "a,?,0,f,5,g,6,',h,7,i,8,j,9,k,d,0,l,m,n,.,o,p,:,e,q,r,s,;,t,u,v,w,b,1,c,4,x,y,z";
+		String a = "a,?,0,f,5,g,6,',h,7,i,8,j,9,k,d,l,m,n,.,o,p,:,e,q,r,s,;,t,u,v,w,b,1,c,4,x,y,z";
 		alphanum = new ArrayList<String>(Arrays.asList(a.split(",")));
 		
 		String b = "!,@,#,$,%,^,&,*, ";
@@ -133,4 +133,3 @@ public class EncryptionAlgorithm {
 	}
 	
 }
-
